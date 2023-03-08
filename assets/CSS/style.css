@@ -84,18 +84,18 @@ input:focus {
   color: #353535;
 }
 
-.button_explorer {
+.bouton_explorer {
   width: 210px;
   height: 50px;
   color: #fff;
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(200.64deg, var(--color-purple) -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   transform: matrix(1, 0, 0, -1, 0, 0);
   border: 0;
 }
 
-.button_explorer p {
+.bouton_explorer p {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -111,19 +111,43 @@ input:focus {
 }
 
 .fonctionnement h1 {
-
-}
-
-.button_fonctionnement {
-
-}
-
-.button_fonctionnement p {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.cercle_et_bouton {
+  display: flex;
+}
+
+.cercle_et_bouton button {
+  display: flex;
+}
+
+.cercle_un {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--color-purple);
+}
+
+.bouton_fonctionnement {
+  border: 0;
+  background: #F7F7F7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  align-items: center;
+}
+
+.bouton_fonctionnement p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 5px;
 }
 
 /*FOOTER*/
