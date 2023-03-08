@@ -120,17 +120,32 @@ input:focus {
 
 .cercle_et_bouton {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .cercle_et_bouton button {
   display: flex;
+  padding-left: 40px;
 }
 
-.cercle_un {
+.cercle_un,
+.cercle_deux,
+.cercle_trois {
+  position: absolute;
+  margin-top: 20px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: var(--color-purple);
+}
+
+.cercle_un p,
+.cercle_deux p,
+.cercle_trois p {
+  margin: 0;
+  text-align: center;
+  padding-top: 2px;
+  color: #fff;
 }
 
 .bouton_fonctionnement {
@@ -139,15 +154,82 @@ input:focus {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   align-items: center;
+  margin-left: 10px;
 }
 
 .bouton_fonctionnement p {
   font-family: 'Roboto';
   font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 20px;
+}
+
+/*RESTAURANTS*/
+.restaurants {
+  padding: 20px;
+  background-color: #F7F7F7;
+}
+
+.restaurants a {
+  text-decoration: none;
+}
+
+.restaurants h1 { 
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin: 5px;
+}
+
+.restaurants h2 {
+  color: #000;
+  margin: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.restaurants p {
+  color: #000;
+  margin: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.carte_restaurants {
+	height: 251px;
+	width: 335px;
+	border-radius: 20px;
+	background-color: #fff;
+	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+  margin-bottom: 50px;
+}
+
+.carte_restaurants img {
+  object-fit:	cover;  
+  width : 340px; 
+	height: 174px;
+	box-sizing: border-box;
+	border: 5px solid #FFFFFF;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.carte_restaurants i {
+  color: #000;
+}
+
+.description {
+  padding: 0px 5px;
+  background-color: #fff;
+  border-radius: 0px 0px 20px 20px;
 }
 
 /*FOOTER*/
