@@ -156,6 +156,8 @@ input:focus {
   border-radius: 20px;
   align-items: center;
   margin-left: 10px;
+
+  transition: background-color 250ms;
 }
 
 .bouton_fonctionnement:hover {
@@ -246,6 +248,20 @@ input:focus {
   color: var(--color-green-font) ;
 }
 
+/*
+.coeur_test {
+  padding: 20px;
+  background-image: url('assets/images/svg/coeur_simple.svg');
+  display:inline-block;
+}
+
+.coeur_test i:focus,
+.coeur_test i:active,
+.coeur_test i:hover {
+  background-image: url('assets/images/svg/coeur_remplis.svg');
+}
+*/
+
 .coeur {
   padding: 20px;
 }
@@ -275,6 +291,15 @@ input:focus {
   width: 21px;
   height: 21px;
 }
+
+.coeur_complet i:active {
+  visibility: visible;
+  display: block;
+  color: var(--color-purple);
+  width: 21px;
+  height: 21px;
+}
+
 
 .description {
   display: flex;
