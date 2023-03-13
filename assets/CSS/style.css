@@ -13,14 +13,13 @@ body {
 }
 
 /*HEADER*/
-header h1 {
-  font-family: 'Shrikhand';
-  font-style: italic;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 44px;
-  text-align: center;
-  color: #101010;
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  padding: 16px 0px 14px 0px;
 }
 
 /*MAIN*/
@@ -249,51 +248,12 @@ input:focus {
 
 .coeur {
   padding: 20px;
-}
-
-.coeur{
-  padding: 20px;
+  color: #000;
 }
 
 .coeur i:hover {
   background-color: red;
 }
-
-/*
-.coeur_bordure i {
-  visibility: visible;
-  display: block;
-  color: #000;
-  width: 21px;
-  height: 21px;
-}
-
-.coeur_bordure i:hover {
-  visibility: hidden;
-  display: none;
-}
-
-.coeur_complet i {
-  visibility: hidden;
-  display: none;
-}
-
-.coeur_complet i:hover {
-  visibility: visible;
-  display: block;
-  color: var(--color-purple);
-  width: 21px;
-  height: 21px;
-}
-
-.coeur_complet i:active {
-  visibility: visible;
-  display: block;
-  color: var(--color-purple);
-  width: 21px;
-  height: 21px;
-}
-*/
 
 .description {
   display: flex;
