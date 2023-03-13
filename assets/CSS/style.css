@@ -88,10 +88,9 @@ input:focus {
   width: 210px;
   height: 50px;
   color: #fff;
-  background: linear-gradient(200.64deg, var(--color-purple) -5.2%, #FF79DA 110.74%);
+  background-image: linear-gradient(#FF79DA, var(--color-purple));
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
-  transform: matrix(1, 0, 0, -1, 0, 0);
   border: 0;
 }
 
@@ -248,24 +247,19 @@ input:focus {
   color: var(--color-green-font) ;
 }
 
-/*
-.coeur_test {
-  padding: 20px;
-  background-image: url('assets/images/svg/coeur_simple.svg');
-  display:inline-block;
-}
-
-.coeur_test i:focus,
-.coeur_test i:active,
-.coeur_test i:hover {
-  background-image: url('assets/images/svg/coeur_remplis.svg');
-}
-*/
-
 .coeur {
   padding: 20px;
 }
 
+.coeur{
+  padding: 20px;
+}
+
+.coeur i:hover {
+  background-color: red;
+}
+
+/*
 .coeur_bordure i {
   visibility: visible;
   display: block;
@@ -299,7 +293,7 @@ input:focus {
   width: 21px;
   height: 21px;
 }
-
+*/
 
 .description {
   display: flex;
