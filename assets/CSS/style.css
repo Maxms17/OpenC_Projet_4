@@ -7,6 +7,73 @@
   --color-purple: #9356DC; /* var(--color-purple) */
 }
 
+/*LOADER*/
+.carre_loader {
+  background: #353535;
+  width: 100%;
+  height: 100%;
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-top-color: var(--color-purple);
+  animation: spin 2s linear infinite;
+}
+
+.loader::before, 
+.loader::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 7px solid transparent;
+}
+
+.loader::before {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-top-color: rgb(161,112,221);
+  animation: spin 3s linear infinite;
+}
+
+.loader::after {
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  border-top-color: rgb(180,138,233);
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text_loader {
+  color: #fff;
+  position: absolute;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/*BODY*/
+
 body {
   margin: 0px auto;
   padding: 0px;
