@@ -30,7 +30,124 @@
     top: 22px;
     left: 10px;
   }
+
+  /*MAIN*/ 
+  main img {
+    width: 100%;
+    height: auto;
+  }
+
+  .liste_menu {
+    padding-top: 10px;
+    background-color: #F7F7F7;
+    border-radius: 25px 25px 0 0;
+  }
+
+  .titre_menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .titre_menu i {
+    width: 22px;
+    height: 20px;
+  }
+
+  .titre_menu h1 {
+    margin: 0;
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+    color: #101010;
+  }
+
+  .entrees_menu,
+  .plats_menu,
+  .desserts_menu {
+    padding: 20px;
+  }
+
+  .trait_vert {
+    width: 75px;
+    height: 2px;
+    background-color: var(--color-green);
+  }
+
+  .proposition {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .entrees_menu h2,
+  .plats_menu h2,
+  .desserts_menu h2 {
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .text_menu h3 {
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .text_menu p {
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .prix_menu p {
+    margin: 0;
+    padding-top: 22px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .commander {
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .bouton_commander {
+    width: 186px;
+    height: 50px;
+    color: #fff;
+    background-image: linear-gradient(#FF79DA, var(--color-purple));
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    border: 0;
+  }
   
+  .bouton_commander p {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
   /*FOOTER*/
   footer {
     color: #fff;
