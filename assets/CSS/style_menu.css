@@ -32,12 +32,29 @@
   }
 
   /*MAIN*/ 
-  main img {
+  .main {
+    position: relative;
     width: 100%;
-    height: auto;
+    height: 800px;
+    margin-bottom: 50px;
+  }
+
+  .position_img {
+    position: absolute;
+    width: 100%;
+    top: 65px;
+  }
+
+  .position_img img {
+    width: 100%;
+    height: 275px;
   }
 
   .liste_menu {
+    position: absolute;
+    width: 100%;
+    top: 290px;
+    z-index: 1;
     padding-top: 10px;
     background-color: #F7F7F7;
     border-radius: 25px 25px 0 0;
@@ -72,7 +89,7 @@
   }
 
   .trait_vert {
-    width: 75px;
+    width: 40px;
     height: 2px;
     background-color: var(--color-green);
   }
@@ -87,6 +104,10 @@
     padding: 10px;
   }
 
+  .proposition:hover {
+    background-color: var(--color-green);
+  }
+  
   .entrees_menu h2,
   .plats_menu h2,
   .desserts_menu h2 {
@@ -100,7 +121,6 @@
   .text_menu h3 {
     margin: 0;
     font-family: 'Roboto';
-    font-weight: 500;
     font-size: 18px;
     line-height: 21px;
   }
@@ -108,7 +128,6 @@
   .text_menu p {
     margin: 0;
     font-family: 'Roboto';
-    font-weight: 300;
     font-size: 15px;
     line-height: 17px;
   }
@@ -123,6 +142,10 @@
   }
 
   .commander {
+    position: absolute;
+    width: 100%;
+    top: 1175px;
+
     background-color: #F7F7F7;
     display: flex;
     justify-content: center;
@@ -150,6 +173,10 @@
 
   /*FOOTER*/
   footer {
+    position: absolute;
+    width: 100%;
+    top: 1245px;
+
     color: #fff;
     background: #353535;
     padding: 20px;
