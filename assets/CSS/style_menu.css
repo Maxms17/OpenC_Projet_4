@@ -151,13 +151,9 @@
     width: 60px;
   }
 
-  /*
-  .proposition:hover {
-    .valide_menu {
-      display: block; 
-    }
+  .proposition:hover .valide_menu{
+    display: block; 
   }
-  */
 
   .commander {
     position: absolute;
