@@ -236,7 +236,6 @@
   /*FOOTER*/
   .pied {
     position: relative;
-    width: 100%;
     color: #fff;
     background: #353535;
     padding: 20px;
@@ -255,7 +254,7 @@
     line-height: 19px;
   }
   
-  .info_footer h1 {
+  .pied h1 {
     font-family: 'Shrikhand';
     font-style: italic;
     font-weight: 400;
@@ -274,4 +273,173 @@
   .info_footer_img_text {
     display: flex;
     margin-bottom: 5px;
+  }
+
+  /* test FOR TABLETTE */
+  @media screen and (min-width: 600px) {
+    .liste_menu {
+      margin: -50px 5% 0 5%;
+      padding: 10px 5% 0 5%;
+      width: 80%;
+    } 
+
+    .commander {
+      width: 80%;
+      margin: 0  5% 0 5%;
+      padding: 10px 5% 20px 5%;
+    }
+
+    /*FOOTER*/
+    .pied {
+      display: flex;
+      gap: 10px;
+      flex-direction: row-reverse;
+      justify-content: right;
+      align-items: center;
+      text-align: center;
+      padding-right: 15px;
+    }
+      
+    .info_footer {
+      display: flex;
+      gap: 10px;
+      padding-right: 10px;
+    }
+      
+    .pied h1 {
+      font-family: 'Shrikhand';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+      
+    .info_footer p {
+      margin: 0;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px;
+    }
+      
+    .info_footer img {
+      width: 11px;
+      height: 13px;
+    }
+      
+    .info_footer_img_text {
+      display: flex;
+      align-items: center;
+    }
+
+  }
+
+  @media screen and (min-width: 900px) {
+    .liste_menu {
+      margin: -50px 10% 0 10%;
+      padding: 10px 10% 0 10%;
+      width: 60%;
+    } 
+
+    .commander {
+      width: 60%;
+      margin: 0  10% 0 10%;
+      padding: 10px 10% 20px 10%;
+    }
+
+    /*FOOTER*/
+    .pied {
+      display: flex;
+      gap: 20px;
+      flex-direction: row-reverse;
+      justify-content: right;
+      align-items: center;
+      text-align: center;
+      padding-right: 100px;
+    }
+      
+    .info_footer {
+      display: flex;
+      gap: 20px;
+      padding-right: 15px;
+    }
+      
+    .pied h1 {
+      font-family: 'Shrikhand';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+    }
+      
+    .info_footer p {
+      margin: 0;
+    }
+      
+    .info_footer img {
+      width: 11px;
+      height: 13px;
+    }
+      
+    .info_footer_img_text {
+      display: flex;
+      margin-bottom: 5px;
+      align-items: center;
+    }
+    
+  }
+
+  /* test FOR DESKTOP */
+  @media screen and (min-width: 1200px) {
+    .liste_menu {
+      margin: -50px 14% 0 14%;
+      padding: 10px 10% 0 10%;
+      width: 52%;
+    } 
+
+    .commander {
+      width: 52%;
+      margin: 0  14% 0 14%;
+      padding: 10px 10% 20px 10%;
+    }
+
+    /*FOOTER*/
+    .pied {
+      display: flex;
+      gap: 20px;
+      flex-direction: row-reverse;
+      justify-content: right;
+      align-items: center;
+      text-align: center;
+      padding-right: 140px  ;
+    }
+    
+    .info_footer {
+      display: flex;
+      gap: 20px;
+      padding-right: 15px;
+    }
+    
+    .pied h1 {
+      font-family: 'Shrikhand';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+    }
+    
+    .info_footer p {
+      margin: 0;
+    }
+    
+    .info_footer img {
+      width: 11px;
+      height: 13px;
+    }
+    
+    .info_footer_img_text {
+      display: flex;
+      margin-bottom: 5px;
+      align-items: center;
+    }
+
   }
