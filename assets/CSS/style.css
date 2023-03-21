@@ -186,6 +186,7 @@ input:focus {
 }
 
 .bouton_explorer {
+  margin-top: 20px;
   width: 210px;
   height: 50px;
   color: #fff;
@@ -257,11 +258,15 @@ input:focus {
   align-items: center;
   margin-left: 10px;
 
-  transition: background-color 250ms;
+  transition: background-color 500ms ease-in;
 }
 
 .bouton_fonctionnement:hover {
-  background-color: #F5EDFF;  
+  background-color: #d1bdeb;  /*#F5EDFF*/
+}
+
+.bouton_fonctionnement i {
+  transition: color 500ms ease-in;
 }
 
 .bouton_fonctionnement:hover i {
