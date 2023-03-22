@@ -225,7 +225,6 @@
     transition-property: width, height;
     transition-duration: 0.3s;
     transition-timing-function: ease;
-    transition-delay: 0;
   }
   
   .bouton_commander:hover {
@@ -234,7 +233,7 @@
     height: 75px;
   }
   
-  .bouton_commander p {
+  .bouton_commander {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;

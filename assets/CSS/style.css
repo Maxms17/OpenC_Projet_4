@@ -197,7 +197,6 @@ input:focus {
   transition-property: width, height;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  transition-delay: 0;
 }
 
 .bouton_explorer:hover {
@@ -206,7 +205,7 @@ input:focus {
   height: 75px;
 }
 
-.bouton_explorer p {
+.bouton_explorer {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -239,6 +238,7 @@ input:focus {
 .cercle_et_bouton {
   display: flex;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .cercle_et_bouton button {
@@ -266,6 +266,19 @@ input:focus {
   color: #fff;
 }
 
+button {
+  text-decoration: none;
+  border: 0;
+  border-radius: 20px;
+  background: #F7F7F7;
+  align-items: center;
+  transition: background-color 500ms ease-in;
+}
+
+button:hover {
+  background-color: #d1bdeb;  /*#F5EDFF*/
+}
+
 .bouton_fonctionnement {
   width: 300px;
   border: 0;
@@ -290,7 +303,7 @@ input:focus {
   color: var(--color-purple);  
 }
 
-.bouton_fonctionnement p {
+.bouton_fonctionnement p{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -443,11 +456,13 @@ footer a {
   /*FONCTIONNEMENT*/
   .fonctionnement {
     margin-left: 8%;
+    margin-right: 8%;
   }
 
   /*RESTAURANTS*/
   .restaurants h1 { 
     margin-left: 8%;
+    margin-right: 8%;
   }
 
   /*FOOTER*/
@@ -499,11 +514,13 @@ footer a {
     /*FONCTIONNEMENT*/
     .fonctionnement {
       margin-left: 10%;
+      margin-right: 10%;
     }
   
     /*RESTAURANTS*/
     .restaurants h1 { 
       margin-left: 10%;
+      margin-right: 10%;
     }
 
   /*FOOTER*/
@@ -554,11 +571,13 @@ footer a {
   /*FONCTIONNEMENT*/
   .fonctionnement {
     margin-left: 14%;
+    margin-right: 14%;
   }
 
   /*RESTAURANTS*/
   .restaurants h1 { 
     margin-left: 14%;
+    margin-right: 14%;
   }
 
   /*FOOTER*/
