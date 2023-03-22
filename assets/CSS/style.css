@@ -187,13 +187,23 @@ input:focus {
 
 .bouton_explorer {
   margin-top: 20px;
-  width: 210px;
-  height: 50px;
   color: #fff;
   background-image: linear-gradient(#FF79DA, var(--color-purple));
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   border: 0;
+  width: 210px;
+  height: 50px;
+  transition-property: width, height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+}
+
+.bouton_explorer:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.50);
+  width: 250px;
+  height: 75px;
 }
 
 .bouton_explorer p {
@@ -217,6 +227,13 @@ input:focus {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.filtre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .cercle_et_bouton {
@@ -320,6 +337,14 @@ input:focus {
   line-height: 20px;
 }
 
+.carte_des_restaurants {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  justify-content: center;
+}
+
 .carte_restaurants {
 	height: 251px;
 	width: 335px;
@@ -415,6 +440,16 @@ footer a {
 /* test FOR TABLETTE */
 @media screen and (min-width: 600px) {
 
+  /*FONCTIONNEMENT*/
+  .fonctionnement {
+    margin-left: 8%;
+  }
+
+  /*RESTAURANTS*/
+  .restaurants h1 { 
+    margin-left: 8%;
+  }
+
   /*FOOTER*/
   .pied {
     display: flex;
@@ -461,6 +496,16 @@ footer a {
 
 @media screen and (min-width: 900px) {
 
+    /*FONCTIONNEMENT*/
+    .fonctionnement {
+      margin-left: 10%;
+    }
+  
+    /*RESTAURANTS*/
+    .restaurants h1 { 
+      margin-left: 10%;
+    }
+
   /*FOOTER*/
   .pied {
     display: flex;
@@ -505,6 +550,16 @@ footer a {
 
 /* test FOR DESKTOP */
 @media screen and (min-width: 1200px) {
+
+  /*FONCTIONNEMENT*/
+  .fonctionnement {
+    margin-left: 14%;
+  }
+
+  /*RESTAURANTS*/
+  .restaurants h1 { 
+    margin-left: 14%;
+  }
 
   /*FOOTER*/
   .pied {
