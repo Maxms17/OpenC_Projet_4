@@ -201,8 +201,8 @@ input:focus {
 
 .bouton_explorer:hover {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.50);
-  width: 250px;
-  height: 75px;
+  width: 220px;
+  height: 60px;
 }
 
 .bouton_explorer {
@@ -273,10 +273,17 @@ button {
   background: #F7F7F7;
   align-items: center;
   transition: background-color 500ms ease-in;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 20px;
 }
 
-button:hover {
-  background-color: #d1bdeb;  /*#F5EDFF*/
+button i {
+  margin-right: 10px;
 }
 
 .bouton_fonctionnement {
@@ -292,7 +299,11 @@ button:hover {
 }
 
 .bouton_fonctionnement:hover {
-  background-color: #d1bdeb;  /*#F5EDFF*/
+  background-color: #d1bdeb;  
+}
+
+.bouton_fonctionnement:hover button{
+  background-color: #d1bdeb;  
 }
 
 .bouton_fonctionnement i {
@@ -301,15 +312,6 @@ button:hover {
 
 .bouton_fonctionnement:hover i {
   color: var(--color-purple);  
-}
-
-.bouton_fonctionnement p{
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  margin: 20px;
 }
 
 /*RESTAURANTS*/
@@ -383,6 +385,7 @@ button:hover {
   width: 80px;
   height: 30px;
   background-color: var(--color-green); 
+  border-radius: 4px;
 }
 
 .nouveau p {
@@ -391,13 +394,27 @@ button:hover {
   color: var(--color-green-font) ;
 }
 
-.coeur {
-  padding: 20px;
-  color: #000;
+.coeur{
+  height: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
-.coeur i:hover {
-  background-color: red;
+.coeur .fa-solid{
+  display: none;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.coeur:hover .fa-sharp {
+  display: none;
+}
+
+.coeur:hover .fa-solid {
+  display: inline;
 }
 
 .description {
