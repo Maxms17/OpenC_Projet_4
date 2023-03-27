@@ -299,11 +299,11 @@ button i {
 }
 
 .bouton_fonctionnement:hover {
-  background-color: #d1bdeb;  
+  background-color: #F5EDFF;  
 }
 
 .bouton_fonctionnement:hover button{
-  background-color: #d1bdeb;  
+  background-color: #F5EDFF;  
 }
 
 .bouton_fonctionnement i {
