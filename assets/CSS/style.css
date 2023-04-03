@@ -121,7 +121,7 @@ header {
 }
 
 header img {
-  padding: 16px 0px 14px 0px;
+  padding: 18px 0px 16px 0px;
 }
 
 /*MAIN*/
@@ -641,4 +641,13 @@ footer a {
     align-items: center;
   }
 
+}
+
+@media screen and (min-height: 1050px) and (min-width: 1500px) {
+  .pied{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
