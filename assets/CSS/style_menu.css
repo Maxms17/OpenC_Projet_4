@@ -63,7 +63,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    gap: 25px;
+    gap: 30px;
     justify-content:center;
   }
 
@@ -80,6 +80,34 @@
     font-size: 28px;
     line-height: 41px;
     color: #101010;
+  }
+
+  .coeur {
+    margin: 0;
+    height: 20px;
+    padding-right: 30px;
+    padding-top: 10px;
+  }
+  
+  .coeur .fa-sharp {
+    color: black;
+  }
+  
+  .coeur .fa-solid {
+    display: none;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  
+  .coeur:hover .fa-sharp {
+    display: none;
+  }
+  
+  .coeur:hover .fa-solid {
+    display: inline;
   }
 
   .entrees_menu,
